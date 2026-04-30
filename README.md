@@ -6,9 +6,9 @@ The application supports user authentication, project-based teams, role-based ac
 
 ## Submission Links
 
-- Live Application: `Pending Railway deployment`
-- Backend API: `Pending Railway deployment`
-- GitHub Repository: `Pending GitHub repository URL`
+- Live Application: `https://teamflow-task-manager-production-348a.up.railway.app`
+- Backend API: `https://intuitive-expression-production.up.railway.app`
+- GitHub Repository: `https://github.com/kulpreetatwork-cloud/teamflow-task-manager`
 - Demo Video: `Pending demo video URL`
 
 ## Demo Accounts
