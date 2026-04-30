@@ -22,9 +22,9 @@ export default function AuthPage({ mode }) {
 
     try {
       if (isSignup) {
-        await signup(form);
+        await signup({ ...form, email: form.email.trim().toLowerCase() });
       } else {
-        await login({ email: form.email, password: form.password });
+        await login({ email: form.email.trim().toLowerCase(), password: form.password });
       }
       navigate("/");
     } catch (apiError) {

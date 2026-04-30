@@ -20,7 +20,8 @@ router.post(
   validate,
   async (req, res) => {
     try {
-      const { name, email, password } = req.body;
+      const { name, password } = req.body;
+      const email = req.body.email.trim().toLowerCase();
       const existingUser = await User.findOne({ email });
 
       if (existingUser) {
@@ -49,7 +50,8 @@ router.post(
   validate,
   async (req, res) => {
     try {
-      const { email, password } = req.body;
+      const email = req.body.email.trim().toLowerCase();
+      const { password } = req.body;
       const user = await User.findOne({ email });
 
       if (!user || !(await bcrypt.compare(password, user.password))) {
